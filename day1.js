@@ -1,5 +1,5 @@
 
-process.stdin.resume();
+/*process.stdin.resume();
 process.stdin.setEncoding('ascii');
 var input_stdin = "";
 var input_stdin_array = "";
@@ -15,6 +15,7 @@ process.stdin.on('end', function () {
 function readLine() {
     return input_stdin_array[input_currentline++];
 }
+*/
 function main() {
     var i = 4
     var d = 4.0
