@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 
 process.stdin.resume();
 process.stdin.setEncoding('utf-8');
@@ -20,7 +20,7 @@ function readLine() {
     return inputString[currentLine++];
 }
 
-
+*/
 
 function main() {
     const n = parseInt(readLine().trim(), 10);
