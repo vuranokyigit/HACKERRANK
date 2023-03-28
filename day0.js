@@ -6,7 +6,7 @@ function processData(inputString) {
 }
 
 
-process.stdin.resume();
+/*process.stdin.resume();
 process.stdin.setEncoding("ascii");
 _input = "";
 process.stdin.on("data", function (input) {
@@ -16,3 +16,4 @@ process.stdin.on("data", function (input) {
 process.stdin.on("end", function () {
    processData(_input);
 });
+*/
