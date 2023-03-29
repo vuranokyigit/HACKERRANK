@@ -1,33 +1,23 @@
 function processData(input) {
-    //Enter your code here
     
-    var inputSplit = input.split('\n');
-    var inputDataValue = inputSplit[0];
+    var inputItSplit = input.split('\n');//
+    var inputEnterNum = inputItSplit[0];
     
     var phoneBook = new Map();
-    for(let i=1; i<=parseInt(inputDataValue); i++){
-        var stabil = inputSplit[i];
-        phoneBook[inputSplit[i]];
-        phoneBook.set(stabil.split(" ")[0], stabil.split(" ")[1]);
+    for(let i=1; i<=parseInt(inputEnterNum); i++){
+        var splittedTheInfo = inputItSplit[i];
+        phoneBook[inputItSplit[i]];
+        phoneBook.set(splittedTheInfo.split(" ")[0], splittedTheInfo.split(" ")[1]);//We selected and split the inputs that we separated as key and value with the set method.
         
-    }  
-    for(let j=parseInt(inputDataValue)+1; j<inputSplit.length; j++){
-        var query = inputSplit[j];
-        if(phoneBook.has(query)){
-            console.log(query + "=" + phoneBook.get(query));
+    }  //we started the loop from 1 because we want the number three that comes first and is the number to be our delimiter. This is how we set our nerves.
+    for(let j=parseInt(inputEnterNum)+1; j<inputItSplit.length; j++){
+        var checkInfo = inputItSplit[j];
+        if(phoneBook.has(checkInfo)){
+            console.log(checkInfo+ "=" + phoneBook.get(checkInfo));//Here we check whether it is in
         }else{
             console.log("Not found")
         }
-    }
+    }//the second loop was created to check the information entered from where we left off.continues from where the previous one left off until the end
 } 
 
-process.stdin.resume();
-process.stdin.setEncoding("ascii");
-_input = "";
-process.stdin.on("data", function (input) {
-    _input += input;
-});
 
-process.stdin.on("end", function () {
-   processData(_input);
-});
