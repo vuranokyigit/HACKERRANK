@@ -1,12 +1,12 @@
 
 function main() {
     const n = parseInt(readLine().trim(), 10);
-    var binaryItN = n.toString(2);//Converts decimal number to binary number
-    var binarySplitN = binaryItN.split("");//We split it so that we can operate on each of them.
+    var convertToBinary = n.toString(2);//Converts decimal number to binary number
+    var inputSplit = convertToBinary.split("");//We split it so that we can operate on each of them.
     var counterConsecutive = 0;//counter that will increment in succession
     var maxConsecutive = 0;//counter that checks the maximum status requested from us
-    for(let i = 0; i<binarySplitN.length; i++){
-        if(binarySplitN[i]==1){
+    for(let i = 0; i<inputSplit.length; i++){
+        if(inputSplit[i]==1){
             counterConsecutive++;//When we see 1 while checking in the array, the counter Consecutive increases
         }else{
             if(counterConsecutive>maxConsecutive)
