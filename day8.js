@@ -5,9 +5,8 @@ function processData(input) {
     
     var phoneBook = new Map();
     for(let i=1; i<=parseInt(inputEnterNum); i++){
-        var splittedTheInfo = inputItSplit[i];
-        phoneBook[inputItSplit[i]];
-        phoneBook.set(splittedTheInfo.split(" ")[0], splittedTheInfo.split(" ")[1]);//We selected and split the inputs that we separated as key and value with the set method.
+        var splittedTheInfo = inputItSplit[i].split(" ");
+        phoneBook.set(splittedTheInfo[0], splittedTheInfo[1]);//We selected and split the inputs that we separated as key and value with the set method.
         
     }  //we started the loop from 1 because we want the number three that comes first and is the number to be our delimiter. This is how we set our nerves.
     for(let j=parseInt(inputEnterNum)+1; j<inputItSplit.length; j++){
