@@ -19,7 +19,7 @@ function main() {
                 inputSplit[j + 1] = temp
             }
         }
-    }// want to use bubble sorting method because of more dunamically and clear codding.
+    }// want to use bubble sorting method because of more dynamically and clear codding.
     let convertNumberInput = inputSplit.map(Number);//convert array's inside  to number
     let maxValueInputArray = Math.max(...convertNumberInput);//max value in array
     let minValueInputArray = Math.min(...convertNumberInput);//min value in array
